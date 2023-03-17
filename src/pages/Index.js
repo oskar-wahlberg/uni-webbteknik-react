@@ -5,10 +5,10 @@ import Config from '../Config.json';
 import ImageSlider from "./../components/ImageSlider";
 
 const slides = [
-    { url: "http://localhost:3000/pizza_generisk.jpg", title: "Pizza Generisk" },
-    { url: "http://localhost:3000/uppdelad_pizza_med_pizza_slicer.jpg", title: "Uppdelad Pizza Slicer" },
-    { url: "http://localhost:3000/pizza_over_the_top.jpg", title: "Pizza Over The Top" },
-    { url: "http://localhost:3000/fyrkantig_pizza.jpg", title: "Fyrkantig Pizza" },
+    { url: "https://reactapp-webbteknik.azurewebsites.net/pizza_generisk.jpg", title: "Pizza Generisk" },
+    { url: "https://reactapp-webbteknik.azurewebsites.net/uppdelad_pizza_med_pizza_slicer.jpg", title: "Uppdelad Pizza Slicer" },
+    { url: "https://reactapp-webbteknik.azurewebsites.net/pizza_over_the_top.jpg", title: "Pizza Over The Top" },
+    { url: "https://reactapp-webbteknik.azurewebsites.net/fyrkantig_pizza.jpg", title: "Fyrkantig Pizza" },
 ];
 
 const TITLE = Config.SITE_TITLE + " | Hem";
