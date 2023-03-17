@@ -1,0 +1,125 @@
+/* KONTAKT CSS STYLESHEET */
+/* V 1.0 - oswa0026 - oswa0026@student.umu.se */
+
+.kontakt-main {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+}
+
+.main-left, .main-right {
+    background-color: #1C3161;
+}
+
+.main-left {
+    width: 40%;
+    height: 500px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-right {
+    width: 60%;
+    height: 500px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*
+ * Main styling
+ */
+.main-left {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-left h1, .main-left p {
+    margin-left: 50px;
+}
+
+.main-left h1 {
+    margin-top: 25px;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    color: #F1D51E;
+}
+
+.main-left p {
+    margin-top: 10px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+.main-right {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+ * MAP STYLING
+ */
+.mapouter {
+    margin-top: 25px;
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 600px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 400px;
+    width: 600px;
+}
+
+#gmap_canvas {
+    width: 600px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1050px) {
+    .kontakt-main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .main-left {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: 200px
+    }
+    
+    .main-right {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .mapouter, .gmap_canvas, #gmap_canvas {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-left h1 {
+        font-size: 24px;
+    }
+
+    .main-left p {
+        font-size: 18px;
+    }
+
+    .mapouter, .gmap_canvas, #gmap_canvas {
+        width: 350px;
+        height: 300px;
+    }
+}

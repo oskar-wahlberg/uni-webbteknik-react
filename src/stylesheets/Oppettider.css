@@ -1,0 +1,286 @@
+/* ÖPPETTIDER CSS STYLESHEET */
+/* V 1.0 - oswa0026 - oswa0026@student.umu.se */
+
+.oppettider-main {
+    width: 1000px;
+    padding: 0 100px;
+
+    margin-top: 10px;
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-color: #1C3161;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    color: #F1D51E;
+    padding: 10px 0;
+}
+
+.main-sub-header {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.msh-text {
+    width: 50%;
+    min-height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msh-text h4 {
+    margin: 0 20px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 30px;
+    color: #F5F5F5;
+}
+
+.banner-container {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    color: #F1D51E;
+
+    background-color: #1e366d;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    margin-top: 10px;
+}
+
+.main-division-container {
+    width: 95%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-division-left, .main-division-right {
+    width: 49%;
+    min-height: 20px;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.main-division-left .image-container, .main-division-right .image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.mdctc-top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 24px;
+    color: #F1D51E;
+}
+
+.mdctc-sub {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 20px;
+    color: #F5F5F5;
+    margin-top: 5px;
+}
+
+.mdctc-text {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 20px;
+    color: #F5F5F5;
+    margin-top: 10px;
+}
+
+.main-bottom-text-container {
+    margin: 25px 0;
+    width: 100%;
+    min-height: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbtc-top, .mbtc-mid, .mbtc-bottom {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+@media screen and (max-width: 1220px) {
+    .oppettider-main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .main-sub-header {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .main-division-container {
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-division-left, .main-division-right {
+        width: 90%;
+    }
+
+    .main-division-left .image-container {
+        height: 300px;
+    }
+
+    .main-division-right .image-container {
+        display: none;
+    }
+
+    .main-division-right .mdc-text-container {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .msh-text h4 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main-header {
+        font-size: 32px;
+    }
+
+    .msh-text h4 {
+        font-size: 20px;
+    }
+
+    .mdctc-top {
+        font-size: 20px;
+    }
+
+    .mdctc-sub, .mdctc-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .oppettider-main {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main-division-left .image-container {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .msh-text {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main-division-left .image-container {
+        height: 200px;
+    }
+
+    .main-header {
+        font-size: 24px;
+    }
+
+    .msh-text h4 {
+        font-size: 16px;
+    }
+
+    .banner-container {
+        height: 35px;
+    }
+    .banner-container h3 {
+        font-size: 20px;
+    }
+
+    .mdctc-top {
+        font-size: 16px;
+    }
+
+    .mdctc-sub, .mdctc-text {
+        font-size: 16px;
+    }
+
+    .mbtc-top, .mbtc-mid, .mbtc-bottom {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-sub-header {
+        font-size: 14px;
+    }
+
+    .mdctc-top {
+        font-size: 14px;
+    }
+
+    .mdctc-sub, .mdctc-text {
+        font-size: 14px;
+    }
+
+    .mbtc-top, .mbtc-mid, .mbtc-bottom {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mdctc-sub, .mdctc-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .msh-text {
+        width: 80%;
+        font-size: 16px;
+    }
+}

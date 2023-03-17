@@ -1,0 +1,96 @@
+/* OM OSS CSS STYLESHEET */
+/* V 1.0 - oswa0026 - oswa0026@student.umu.se */
+
+.om-oss-main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-color: #1C3161;
+
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 85%;
+    height: 450px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+
+    transition: height .1s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.om-oss-text-container {
+    width: 85%;
+    min-height: 50px;
+    margin-bottom: 25px;
+
+    transition: all .1s ease;
+}
+
+.om-oss-text-container h1 {
+    color: #F1D51E;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.om-oss-text-container p {
+    color: #F5F5F5;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .image-container {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .image-container {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .image-container {
+        height: 300px
+    }
+
+    .om-oss-text-container h1 {
+        font-size: 32px;
+    }
+    
+    .om-oss-text-container p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .om-oss-text-container h1 {
+        font-size: 24px;
+    }
+
+    .om-oss-text-container p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .image-container {
+        height: 225px;
+    }
+}
