@@ -2,7 +2,6 @@ import React from 'react';
 import DesktopNavigation from './DesktopNavigation';
 import MobileNavigation from './MobileNavigation';
 
-
 class Header extends React.Component {
     render() {
         return(
@@ -13,7 +12,7 @@ class Header extends React.Component {
 
                 <div className="page-nav-container">
                     <nav className="top-nav" id="nav-holder">
-                        <DesktopNavigation/>
+                        <DesktopNavigation />
                         <MobileNavigation />
                     </nav>
                 </div>
